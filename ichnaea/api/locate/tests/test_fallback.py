@@ -1281,7 +1281,6 @@ class TestDefaultFallback(BaseFallbackTest, BaseSourceTest):
                 value=1,
                 tags=[
                     "key:test",
-                    "region:none",
                     "source:fallback",
                     "accuracy:medium",
                     "status:hit",

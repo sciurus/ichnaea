@@ -35,7 +35,6 @@ class TestRegionSource(BaseSourceTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",
@@ -65,7 +64,6 @@ class TestRegionSource(BaseSourceTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",
@@ -93,7 +91,6 @@ class TestRegionSource(BaseSourceTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",
@@ -145,7 +142,6 @@ class TestRegionSource(BaseSourceTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",

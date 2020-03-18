@@ -344,7 +344,7 @@ class CommonLocateTest(BaseLocateTest):
                 "incr",
                 self.metric_type + ".query",
                 value=1,
-                tags=["key:test", "region:GB", "blue:none", "cell:none", "wifi:none"],
+                tags=["key:test", "blue:none", "cell:none", "wifi:none"],
             )
             assert metricsmock.has_record(
                 "incr",
@@ -352,7 +352,6 @@ class CommonLocateTest(BaseLocateTest):
                 value=1,
                 tags=[
                     "key:test",
-                    "region:GB",
                     "fallback_allowed:false",
                     "accuracy:low",
                     "status:hit",
@@ -365,7 +364,6 @@ class CommonLocateTest(BaseLocateTest):
                 value=1,
                 tags=[
                     "key:test",
-                    "region:GB",
                     "source:geoip",
                     "accuracy:low",
                     "status:hit",
@@ -532,7 +530,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "geoip:false",
                 "blue:many",
                 "cell:none",
@@ -545,7 +542,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "accuracy:high",
                 "fallback_allowed:false",
                 "status:miss",
@@ -557,7 +553,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:high",
                 "status:miss",
@@ -591,7 +586,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "geoip:false",
                 "blue:none",
                 "cell:one",
@@ -604,7 +598,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:medium",
                 "status:miss",
@@ -616,7 +609,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:medium",
                 "status:miss",
@@ -677,7 +669,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "geoip:false",
                 "blue:none",
                 "cell:none",
@@ -690,7 +681,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:low",
                 "status:hit",
@@ -703,7 +693,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",
@@ -737,7 +726,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "geoip:false",
                 "blue:none",
                 "cell:none",
@@ -750,7 +738,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:low",
                 "status:hit",
@@ -763,7 +750,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:low",
                 "status:hit",
@@ -819,7 +805,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:low",
                 "status:hit",
@@ -852,7 +837,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "geoip:false",
                 "blue:none",
                 "cell:none",
@@ -865,7 +849,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "accuracy:high",
                 "fallback_allowed:false",
                 "status:miss",
@@ -877,7 +860,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:high",
                 "status:miss",
@@ -951,7 +933,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:none",
                 "geoip:false",
                 "blue:none",
                 "cell:many",
@@ -964,7 +945,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:none",
                 "fallback_allowed:true",
                 "accuracy:high",
                 "status:hit",
@@ -977,7 +957,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:none",
                 "source:internal",
                 "accuracy:high",
                 "status:miss",
@@ -989,7 +968,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:none",
                 "source:fallback",
                 "accuracy:high",
                 "status:hit",
@@ -1035,7 +1013,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:GB",
                 "fallback_allowed:true",
                 "accuracy:high",
                 "status:hit",
@@ -1048,7 +1025,6 @@ class CommonPositionTest(BaseLocateTest):
             value=1,
             tags=[
                 "key:fall",
-                "region:GB",
                 "source:fallback",
                 "accuracy:high",
                 "status:hit",

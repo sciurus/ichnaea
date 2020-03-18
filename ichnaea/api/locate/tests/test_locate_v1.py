@@ -122,7 +122,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:high",
                 "status:hit",
@@ -135,7 +134,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:high",
                 "status:hit",
@@ -228,7 +226,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:medium",
                 "status:hit",
@@ -241,7 +238,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:medium",
                 "status:hit",
@@ -338,7 +334,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "fallback_allowed:false",
                 "accuracy:high",
                 "status:hit",
@@ -351,7 +346,6 @@ class TestView(LocateV1Base, CommonLocateTest, CommonPositionTest):
             value=1,
             tags=[
                 "key:test",
-                "region:none",
                 "source:internal",
                 "accuracy:high",
                 "status:hit",
@@ -524,7 +518,6 @@ class TestError(LocateV1Base, BaseLocateTest):
                 value=1,
                 tags=[
                     "key:test",
-                    "region:GB",
                     "fallback_allowed:false",
                     "accuracy:high",
                     "status:miss",
